@@ -1,1 +1,57 @@
 <!-- ...crickets... -->
+<doctype! html>
+<html>
+    <body>
+        <h1>Registration form</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        <h2>Which taxi do you require?</h2>
+        <label>
+            <input type="radio" required name="taxi" required value="Car" />
+            Car
+        </label>
+        <label>
+            <input type="radio" required name="taxi" required value="Van" />
+            Van
+        </label>
+        <label>
+            <input type="radio" required name="taxi" required value="Tuk Tuk" />
+            Tuk Tuk
+        </label>     
+        <h2>Choose your extras</h2>           
+        <label>
+            <input type="checkbox" name="Baby Seat" value="Baby Seat"/>
+            Baby Seat
+        </label>
+        <label>
+            <input type="checkbox" name="Wheelchair Access" value="Wheelchair Access" />
+            Wheelchair Access           
+        </label>
+        <label>
+            <input type="checkbox" name="Privacy Windows" value="Privacy Windows" />
+            Privacy Windows         
+        </label>
+        <h2>Where would you like us to pick you up?</h2>
+        <label for="pick-up">Pick-Up Location:</label>
+        <select>
+            <option value="null" selected>Select One</option>
+            <option required value="Downtown">Downtown</option>
+            <option required value="Our Office">Our Office</option>
+            <option required value="Hotel">Hotel</option>
+            <option required value="Home">Home</option>
+        </select>
+        <h2>Additional Intstructions</h2>
+        <label for="Additional Instructions">Instructions: </label>
+        <textarea
+        name="Additional Instructions"
+        placeholder="provide instructions here">
+        </textarea>
+        <button>Submit</button>
+    </form>
+    </body>
+</html>
